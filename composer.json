@@ -1,0 +1,17 @@
+{
+    "name": "kiora/everial-bundle",
+    "description": "A bundle for everial lib",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Kiora\\EverialBundle\\": ""
+        }
+    },
+    "require": {
+        "kiora/everial": "^0.1",
+        "symfony/http-kernel": "^4.3|^5.0",
+        "symfony/dependency-injection": "^4.3|^5.0",
+        "symfony/config": "^4.3|^5.0",
+        "symfony/http-client": "^4.3|^5.0"
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="kiora.everial.client" class="Kiora\EverialClient" public="true">
+            <argument type="service" id="Symfony\Contracts\HttpClient\HttpClientInterface" />
+            <argument>%kiora.everial.auth_base_path%</argument>
+            <argument>%kiora.everial.base_path%</argument>
+            <argument>%kiora.everial.username%</argument>
+            <argument>%kiora.everial.password%</argument>
+        </service>
+        <service id="Kiora\EverialClient" alias="kiora.everial.client" />
+    </services>
+</container>
