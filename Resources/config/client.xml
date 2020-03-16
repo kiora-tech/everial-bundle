@@ -12,5 +12,6 @@
             <argument>%kiora.everial.username%</argument>
             <argument>%kiora.everial.password%</argument>
         </service>
+        <service id="Kiora\EverialClient" alias="kiora.everial.client" />
     </services>
 </container>
