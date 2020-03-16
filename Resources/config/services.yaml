@@ -6,4 +6,5 @@ services:
             $everialUsername: "%everial_user_name%"
             $everialPassword: "%everial_password%"
     Kiora/EverialClient:
+        class: Kiora/EverialClient
         autowire: true
