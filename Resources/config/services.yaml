@@ -5,6 +5,6 @@ services:
             $everialBasePath: "%everial_base_path%"
             $everialUsername: "%everial_user_name%"
             $everialPassword: "%everial_password%"
-    Kiora/EverialClient:
-        class: Kiora/EverialClient
+    Kiora\EverialClient:
+        class: Kiora\EverialClient
         autowire: true
