@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        bind:
+            $everialAuthBasePath: "%everial_auth_base_path%"
+            $everialBasePath: "%everial_base_path%"
+            $everialUsername: "%everial_user_name%"
+            $everialPassword: "%everial_password%"
+    Kiora/EverialClient:
+        autowire: true
