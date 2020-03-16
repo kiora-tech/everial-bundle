@@ -10,7 +10,7 @@ use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class EveriralExtension extends Extension
+class KioraEverialExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
