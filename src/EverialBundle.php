@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Kiora\EverialBundle;
-
 
 use Kiora\EverialBundle\DependencyInjection\KioraEverialExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
