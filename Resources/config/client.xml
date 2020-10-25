@@ -12,6 +12,10 @@
             <argument>%kiora.everial.username%</argument>
             <argument>%kiora.everial.password%</argument>
         </service>
-        <service id="Kiora\EverialClient" alias="kiora.everial.client" />
+        <service id="Kiora\EverialClientInterface" alias="kiora.everial.client" />
+        <service id="Kiora\EverialBundle\EverialClient" decorates="kiora.everial.client">
+            <argument type="service" id="Kiora\EverialBundle\EverialClient.inner" />
+            <argument type="service" id="messenger.bus.default" />
+        </service>
     </services>
 </container>
