@@ -12,7 +12,6 @@
         "symfony/http-kernel": "^4.4|^5.1",
         "symfony/dependency-injection": "^4.4|^5.1",
         "symfony/config": "^4.4|^5.1",
-        "symfony/http-client": "^4.4|^5.1",
-        "symfony/messenger": "^5.1"
+        "symfony/http-client": "^4.4|^5.1"
     }
 }
